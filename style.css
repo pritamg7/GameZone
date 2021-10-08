@@ -10,7 +10,7 @@ body {
   font-family: cursive;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 400%;
 }
 
@@ -30,6 +30,10 @@ body {
 
 .topnav {
   overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 0.7;
   background-color: rgb(18, 173, 245);
 }
 
@@ -43,8 +47,8 @@ body {
 }
 
 .topnav a:hover {
-  background-color: rgb(20, 29, 158);
-  color: rgb(0, 0, 0);
+  background-color: rgb(2, 10, 116);
+  color: rgb(8, 0, 0);
 }
 
 .topnav a.active {
@@ -58,6 +62,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   color: cadetblue;
+}
+
+.paragraph1 {
+  display: flex;
+  justify-content: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: rgb(0, 12, 12);
 }
 
 input[type="text"],
@@ -132,10 +144,8 @@ input[type="submit"]:hover {
   padding: 0 4px;
 }
 
-
 .column {
   flex: 25%;
-  
   max-width: 25%;
   padding: 0 4px;
 }
@@ -145,14 +155,12 @@ input[type="submit"]:hover {
   vertical-align: middle;
 }
 
-
 @media (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
-
 
 @media (max-width: 600px) {
   .column {
@@ -161,12 +169,9 @@ input[type="submit"]:hover {
   }
 }
 
-.caption{
+.caption {
   display: flex;
+
   font-size: medium;
   font-family: cursive;
-  
 }
-
-
-
